@@ -60,15 +60,16 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service1.svc" />
+    <Content Include="ServiceUsuario.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Service1.svc.cs">
-      <DependentUpon>Service1.svc</DependentUpon>
-    </Compile>
-    <Compile Include="IService1.cs" />
+    <Compile Include="IServiceUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceUsuario.svc.cs">
+      <DependentUpon>ServiceUsuario.svc</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioEntity.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
